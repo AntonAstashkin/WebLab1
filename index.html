@@ -30,11 +30,10 @@
 
 					for (let i = 0; i < reserves.length; i++) {
 						const txt = reserves[i].getElementsByTagName("txt")[0].childNodes[0].nodeValue;
-						const txten = reserves[i].getElementsByTagName("txten")[0].childNodes[0].nodeValue;
 						const value = reserves[i].getElementsByTagName("value")[0].childNodes[0].nodeValue;
 
 						const li = document.createElement("li");
-						li.innerText = `${txt} | ${txten} | ${value}`;
+						li.innerText = `${txt} : | ${value}`;
 						ul.appendChild(li);
 					}
 				})
